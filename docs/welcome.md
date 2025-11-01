@@ -20,6 +20,6 @@ The MC_RESOURCES part has not yet been written.
 
 :::warning Warning
 
-The documentation has been written for 0.3.9.2-STABLE version.
+The documentation has been written **0.4.1-STABLE** version.
 
 :::

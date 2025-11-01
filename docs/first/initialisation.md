@@ -245,3 +245,68 @@ routes:
 enableLogs: true # The enableLogs boolean allows you to create a .log file that explains the error in detail if you encountered an error.
 
 ```
+
+---
+
+You can now use the Web Implementation Service of ConnectLib to see a lot of informations about ConnectLib and your requests.
+
+Here is an example of the Web Implementation Service:
+
+```java
+public class Example {
+
+    /**
+     * Instance of ConnectLib
+     */
+    private final static ConnectLib connectLib = new ConnectLib();
+    
+    public void initWithEnum() {
+
+        /**
+         * You can initialize the library with an enumeration;
+         * the enumeration allows you to orchestrate the requests.
+         * 
+         * By specifying EnumExample.class, 
+         * it will then register the existing routes from the enumeration in the infos.yml file.
+         * 
+         * The webServices(); method enables the Web Implementation Service.
+         */
+        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH, EnumExample.class)
+                .webServices(); // Enable the Web Implementation Service
+    }
+
+}
+```
+
+---
+
+## Some screenshots of the Web Implementation Service
+
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="/img/connectlibdash.jpeg"
+    alt="ConnectLib dashboard"
+    style={{ borderRadius: 12, maxWidth: '90%', height: 'auto' }}
+  />
+</div>
+
+<br/>
+
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="/img/connectlibdash-2.jpeg"
+    alt="ConnectLib dashboard"
+    style={{ borderRadius: 12, maxWidth: '90%', height: 'auto' }}
+  />
+</div>
+
+<br/>
+
+<div style={{ textAlign: 'center' }}>
+  <img
+    src="/img/connectlibdash-3.jpeg"
+    alt="ConnectLib dashboard"
+    style={{ borderRadius: 12, maxWidth: '90%', height: 'auto' }}
+  />
+</div>
+
