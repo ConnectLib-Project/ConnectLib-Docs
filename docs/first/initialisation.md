@@ -278,6 +278,12 @@ public class Example {
 }
 ```
 
+
+To access the dashboard, you must first start the `.webServices`, then you can access it via `localhost:3000`.
+
+In future updates, it will be possible to change the port.
+
+
 ---
 
 ## Some screenshots of the Web Implementation Service
