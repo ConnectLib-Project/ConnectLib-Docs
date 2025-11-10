@@ -273,6 +273,11 @@ public class Example {
          */
         connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH, EnumExample.class)
                 .webServices(); // Enable the Web Implementation Service
+        
+                // Or if you want to change some settings
+                // If you put 0 it will use the default port 3000
+                // The nameDashboard allows you to change the name of the dashboard
+                .webServices(port: 3000, nameDashboard: "ConnectLibTutorial Dashboard");
     }
 
 }
