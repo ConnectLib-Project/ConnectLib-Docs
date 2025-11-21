@@ -123,7 +123,7 @@ public class Example {
 
             ApiFactory apiFactory;
 
-            apiFactory.getSpecData("data", "value");
+            apiFactory.getSpecData("data", "key1");
             
             // msg: "example response",
             // err: false,

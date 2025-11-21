@@ -49,7 +49,7 @@ public class Example {
          * the enumeration allows you to orchestrate the requests.
          * Without this option, you have to list them manually in infos.yml.
          */
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH);
     }
 
 }
@@ -79,19 +79,19 @@ public class Example {
         /**
          * MAIN_RESOURCES is used for production code.
          */
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH);
 
         /**
          * TEST_RESOURCES is used for test code.
          * Most for developers who want to test the library.
          */
-        connectLib.Init(ResourceType.TEST_RESOURCES, LangType.ENGLISH);
+        connectLib.init(ResourceType.TEST_RESOURCES, LangType.ENGLISH);
 
         /**
          * MC_RESOURCES is used for Minecraft Mod/Plugin developers.
          * It contains specific methods for this type of project.
          */
-        connectLib.Init(ResourceType.MC_RESOURCES, LangType.ENGLISH);
+        connectLib.init(ResourceType.MC_RESOURCES, LangType.ENGLISH);
     }
 
 }
@@ -117,15 +117,15 @@ public class Example {
          */
 
         
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.FRENCH);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.SPANISH);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.GERMAN);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ITALIAN);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.PORTUGUESE);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.RUSSIAN);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.CHINESE);
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.JAPANESE);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.FRENCH);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.SPANISH);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.GERMAN);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.ITALIAN);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.PORTUGUESE);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.RUSSIAN);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.CHINESE);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.JAPANESE);
     }
 
 }
@@ -194,7 +194,7 @@ public class Example {
          * By specifying EnumExample.class, 
          * it will then register the existing routes from the enumeration in the infos.yml file.
          */
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH, EnumExample.class);
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH, EnumExample.class);
     }
 
 }
@@ -271,7 +271,7 @@ public class Example {
          * 
          * The webServices(); method enables the Web Implementation Service.
          */
-        connectLib.Init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH, EnumExample.class)
+        connectLib.init(ResourceType.MAIN_RESOURCES, LangType.ENGLISH, EnumExample.class)
                 .webServices(); // Enable the Web Implementation Service
         
                 // Or if you want to change some settings

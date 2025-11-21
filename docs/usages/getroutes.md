@@ -229,7 +229,8 @@ public class Example {
             );
             
             connectLib.JobGetInfos()
-                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE, body)
+                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE)
+                    .body(body);
 
 
         } catch (Exception e) {
@@ -275,7 +276,8 @@ public class Example {
             );
 
             connectLib.JobGetInfos()
-                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE, null, params)
+                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE)
+                    .params(params);
 
 
         } catch (Exception e) {
@@ -315,7 +317,8 @@ public class Example {
             );
 
             connectLib.JobGetInfos()
-                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE, null, null, query)
+                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE, null, null)
+                    .query(query);
 
 
         } catch (Exception e) {
@@ -361,8 +364,11 @@ public class Example {
             );
 
             connectLib.JobGetInfos()
-                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE, body, params, query)
-                    .getResponse();
+                    .getRoutes(VersionType.V1_BRANCH, MethodType.GET, EnumExample.EXAMPLE)
+                    .body(body)
+                    .params(params)
+                    .query(query)
+                    .execute();
                     
                     // getResponse(); allows you to send the request and retrieve the response data for the next step, 
                     // parsing the data.
@@ -370,8 +376,11 @@ public class Example {
                     
             // Without VersionType        
             connectLib.JobGetInfos()
-                    .getRoutes(MethodType.GET, EnumExample.EXAMPLE, body, params, query)
-                    .getResponse();    
+                    .getRoutes(MethodType.GET, EnumExample.EXAMPLE)
+                    .body(body)
+                    .params(params)
+                    .query(query)
+                    .execute();    
 
 
         } catch (Exception e) {

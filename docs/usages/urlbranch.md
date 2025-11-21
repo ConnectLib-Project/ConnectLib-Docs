@@ -64,7 +64,7 @@ public class Example {
                     
                     .urlBranch(ExampleUrlBranch.PROD)
                     
-                    .getResponse();
+                    .execute();
 
             ApiFactory response = factoryCompletableFuture.get(5, TimeUnit.SECONDS);
 

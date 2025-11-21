@@ -48,10 +48,25 @@ public class Example {
         connectLib.JobGetInfos().urlBranch();
 
         /**
-         * getResponse allows you to retrieve the response data from the request.
+         * execute allows you to make a request and retrieve the response data from the request.
          */
-        connectLib.JobGetInfos().getResponse();
+        connectLib.JobGetInfos().execute();
         
+        /**
+         * body(); method allows you to put a body in your request.
+         */
+        connectLib.JobGetInfos().body();
+
+        /**
+         * params(); method allows you to put params in your request.
+         */
+        connectLib.JobGetInfos().params();
+
+        /**
+         * query(); method allows you tu put query in your request.
+         */
+        connectLib.JobGetInfos().query();
+
         /**
          * The showLogs(); method allows you to display the ConnectLib logs during the request steps.
          * This method is created if you want to display the logs of a request.

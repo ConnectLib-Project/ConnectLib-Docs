@@ -78,7 +78,7 @@ public class Example {
 
             CompletableFuture<ApiFactory> apiFactoryCompletableFuture = connectLib.JobGetInfos()
                     .getRoutes(MethodType.GET, EnumExample.EXAMPLE)
-                    .getResponse();
+                    .execute();
             
             
             // We must create a synchronous ApiFactory apiFactory instance
@@ -145,7 +145,7 @@ public class Example {
 
             CompletableFuture<ApiFactory> apiFactoryCompletableFuture = connectLib.JobGetInfos()
                     .getRoutes(MethodType.GET, EnumExample.EXAMPLE)
-                    .getResponse();
+                    .execute();
             
             
             // We must create a synchronous ApiFactory apiFactory instance
